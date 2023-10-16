@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="videoTutorial">
+      <iframe
+        width="500"
+        height="315"
+        src="https://www.youtube.com/embed/vLi1qnRmpe4?si=lppHChUFvSkAxbTo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="gameInstruction">
+      <p class="gameInstructionText">
+        For game instructions, check out the video.
+      </p>
+      <button id="button-90" class="button-91 btn1" role="button">Play</button>
+    </div>
+    <div id="game">
+      <h1 id="level-title">Welcome</h1>
+      <div class="container">
+        <div>
+          <button type="button" id="green" class="btn green"></button>
+
+          <button type="button" id="red" class="btn red"></button>
+
+          <button type="button" id="yellow" class="btn yellow"></button>
+
+          <button type="button" id="blue" class="btn blue"></button>
+        </div>
+      </div>
+      <button id="button-91" class="button-91" role="button">Start</button>
+    </div>
+    <audio id="red-audio" src="./sounds/red.mp3"></audio>
+    <audio id="blue-audio" src="./sounds/blue.mp3"></audio>
+    <audio id="green-audio" src="./sounds/green.mp3"></audio>
+    <audio id="yellow-audio" src="./sounds/yellow.mp3"></audio>
+    <audio id="wrong-audio" src="./sounds/wrong.mp3"></audio>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
