@@ -17,7 +17,7 @@ function checkAnswer(currentLevel) {
     $("body").addClass("game-over");
     setTimeout(function () {
       $("body").removeClass("game-over");
-    }, 500);
+    }, 600);
     $("#level-title").text("Game Over");
     startOver();
     $("#button-91").text("Restart");
@@ -56,7 +56,7 @@ $("#button-91").click(function () {
     $("#level-title").text("Level " + level);
     setTimeout(function () {
       nextSequence();
-    }, 1000);
+    }, 600);
     started = true;
   }
 });
